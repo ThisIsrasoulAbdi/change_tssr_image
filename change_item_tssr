@@ -1,0 +1,132 @@
+Option Explicit
+
+Sub sheetGenera()
+Dim lat As String
+Dim longe As String
+Dim codeSite As String
+Dim region As String
+Dim clusterName As String
+Dim siteType As String
+Dim towerHeight As String
+Dim towerType As String
+Dim sector1 As String
+Dim sector2 As String
+Dim sector3 As String
+Dim sector4 As String
+Dim sectorH1 As String
+Dim sectorH2 As String
+Dim sectorH3 As String
+Dim sectorH4 As String
+Dim antennaType As String
+Dim towerManu As String
+'Code Site
+
+ codeSite = InputBox("Please Enter Code Site")
+ Range("eItem_6520865208").Value = codeSite
+ Range("BB76").Value = codeSite
+ 'Code Site
+ 'Date Now
+ Range("eItem_6521265212").Value = DateTime.Now
+  'Date Now
+  'lat long
+lat = InputBox("Plase Enter Lat ")
+longe = InputBox("Plase Enter Long")
+Range("eItem_6525665256").Value = lat
+Range("eItem_6525765257").Value = longe
+Range("O5").Value = lat
+Range("W5").Value = longe
+ 'Date Now
+ 'region
+region = InputBox("Enter Region Site")
+Range("eItem_6525965259").Value = region
+If region = "8" Then
+    Range("eItem_6526065260").Value = "Alborz"
+ElseIf region = "7" Then
+ Range("eItem_6526065260").Value = "Tehran"
+ End If
+Range("eItem_6525965259").Value = region
+If region = "8" Then
+    Range("eItem_6526165261").Value = "Karaj"
+ElseIf region = "7" Then
+ Range("eItem_6526065261").Value = "Tehran"
+ End If
+ If region = "8" Then
+    Range("eItem_6526365263").Value = "Karaj"
+ElseIf region = "7" Then
+ Range("eItem_6526365263").Value = "Tehran"
+ End If
+ clusterName = InputBox("Enter Cluster Name Site")
+  Range("eItem_6526265262").Value = clusterName
+  siteType = InputBox("Enter RT Or GF")
+  
+  
+   If siteType = "gf" Then
+    Range("eItem_6527265272").Value = "Greenfield"
+ElseIf region = "7" Then
+ Range("eItem_6527265272").Value = "Rooftop"
+ End If
+  'region
+ towerHeight = InputBox("Enter Tower Height")
+   Range("eItem_6528765287").Value = towerHeight
+   towerType = InputBox("Enter Tower Name")
+     Range("eItem_7175771757").Value = towerType
+    sector1 = InputBox("Enter Sector1 ")
+    sectorH1 = InputBox("Enter Sector1 Height")
+    sector2 = InputBox("Enter Sector2 ")
+     sectorH2 = InputBox("Enter Sector2 Height")
+    sector3 = InputBox("Enter Sector3 ")
+        sectorH3 = InputBox("Enter Sector3 Height")
+    sector4 = InputBox("Enter Sector4 ")
+    sectorH4 = InputBox("Enter Sector4 Height")
+ 'sector 1
+      Range("eItem_7418574185").Value = sector1
+      Range("eItem_7421774217").Value = sectorH1
+       Range("eItem_7419374193").Value = sector1
+      Range("eItem_7422574225").Value = sectorH1
+             Range("eItem_7420174201").Value = sector1
+      Range("eItem_7423374233").Value = sectorH1
+               Range("eItem_7420574205").Value = sector1
+      Range("eItem_7423774237").Value = sectorH1
+ 'sector 1
+       'sector 2
+      Range("eItem_7418774187").Value = sector2
+      Range("eItem_7421974219").Value = sectorH2
+       Range("eItem_7419574195").Value = sector2
+      Range("eItem_7422774227").Value = sectorH2
+             Range("eItem_7420274202").Value = sector1
+      Range("eItem_7423474234").Value = sectorH2
+               Range("eItem_7420674206").Value = sector1
+      Range("eItem_7423874238").Value = sectorH1
+ 'sector 2
+   'sector 3
+      Range("eItem_7418974189").Value = sector3
+      Range("eItem_7422174221").Value = sectorH3
+       Range("eItem_7419774197").Value = sector3
+      Range("eItem_7422974229").Value = sectorH3
+             Range("eItem_7420374203").Value = sector3
+      Range("eItem_7423574235").Value = sectorH3
+               Range("eItem_7420774207").Value = sector3
+      Range("eItem_7423974239").Value = sectorH3
+ 'sector 3
+ 
+    'sector 4
+      Range("eItem_7419174191").Value = sector4
+      Range("eItem_7422374223").Value = sectorH4
+       Range("eItem_7419974199").Value = sector4
+      Range("eItem_7423174231").Value = sectorH4
+             Range("eItem_7420474204").Value = sector4
+      Range("Y84").Value = sectorH4
+               Range("eItem_7420874208").Value = sector4
+      Range("eItem_7424074240").Value = sectorH4
+ 'sector 4
+ 'Model Anntena
+     antennaType = InputBox("Enter Antenna Type ")
+    Range("eItem_7172771727").Value = antennaType
+     Range("eItem_7430674306").Value = antennaType
+      Range("eItem_7172871728").Value = antennaType
+ 'Tower Manufaturer
+  towerManu = InputBox("Enter Manufaturer ")
+   Range("eItem_7461474614").Value = antennaType
+End Sub
+
+
