@@ -92,7 +92,7 @@ Set rng = Range("PIC_Item_6525165251")
 For Each cl In rng
     imgEarth = cl.Offset(0, -1)
 
-        Set img_earth = Sheet4.Pictures.Insert("E:\Modernaization\E2233\tssr\img_earth.jpg")
+        Set img_earth = Sheet4.Pictures.Insert("E:\Modernaization\E2233\tssr\img_earth.png")
         '
         With img_earth
             .ShapeRange.LockAspectRatio = msoFalse
