@@ -10,66 +10,6 @@ Dim imgEarth As String
 Dim img_earth As Picture
 Dim imgMap As String
 Dim img_map As Picture
-Dim mw1 As String
-Dim mw_1 As Picture
-Dim mw2 As String
-Dim mw_2 As Picture
-Dim mw3 As String
-Dim mw_3 As Picture
-Dim rackTransmission As String
-Dim rack_transmission As Picture
-Dim rackTransmission2 As String
-Dim rack_transmission2 As Picture
-Dim iBeam1 As String
-Dim ibeam_1 As Picture
-Dim iBeam2 As String
-Dim ibeam_2 As Picture
-Dim extraCable As String
-Dim extra_cable As Picture
-Dim extraCable2 As String
-Dim extra_cable2 As Picture
-Dim rackNian As String
-Dim rack_nian As Picture
-Dim tower As String
-Dim tower_1 As Picture
-Dim tower2 As String
-Dim tower_2 As Picture
-Dim tower3 As String
-Dim tower_3 As Picture
-Dim tower4 As String
-Dim tower_4 As Picture
-Dim tower5 As String
-Dim tower_5 As Picture
-Dim tower6 As String
-Dim tower_6 As Picture
-Dim rack As String
-Dim rack_1 As Picture
-Dim rack2 As String
-Dim rack_2 As Picture
-Dim rack3 As String
-Dim rack_3 As Picture
-Dim rack4 As String
-Dim rack_4 As Picture
-Dim rack5 As String
-Dim rack_5 As Picture
-Dim rack6 As String
-Dim rack_6 As Picture
-Dim rack7 As String
-Dim rack_7 As Picture
-Dim rack8 As String
-Dim rack_8 As Picture
-Dim rack9 As String
-Dim rack_9 As Picture
-Dim rack10 As String
-Dim rack_10 As Picture
-Dim rack11 As String
-Dim rack_11 As Picture
-Dim sec1 As String
-Dim sec_1 As Picture
-Dim sec2 As String
-Dim sec_2 As Picture
-Dim sec3 As String
-Dim sec_3 As Picture
 Dim pana0 As String
 Dim pana_0 As Picture
 Dim pana30 As String
@@ -100,6 +40,33 @@ Dim pdb2 As String
 Dim pdb_2 As Picture
 Dim pdb3 As String
 Dim pdb_3 As Picture
+Dim sec1 As String
+Dim sec_1 As Picture
+Dim sec2 As String
+Dim sec_2 As Picture
+Dim sec3 As String
+Dim sec_3 As Picture
+
+
+Dim mw As String
+Dim mw_1 As Picture
+Dim extraLader As String
+Dim extra_lader As Picture
+Dim rack10 As String
+Dim rack_10 As Picture
+Dim rack6 As String
+Dim rack_6 As Picture
+Dim rack8 As String
+Dim rack_8 As Picture
+Dim tower As String
+Dim tower_1 As Picture
+Dim site As String
+Dim site_1 As Picture
+Dim rack As String
+Dim rack_1 As Picture
+
+
+
 
 
 
@@ -138,6 +105,255 @@ For Each cl In rng
 
 Next
 
+
+Set rng = Range("PIC_Item_7449474494")
+For Each cl In rng
+    extraLader = cl.Offset(0, -1)
+
+        Set extra_lader = Sheet7.Pictures.Insert("E:\Modernaization\E2233\tssr\extra_cable1.jpg")
+        '
+        With extra_lader
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+        '
+
+Next
+
+
+
+Set rng = Range("PIC_Item_6561265612_a")
+For Each cl In rng
+    tower = cl.Offset(0, -1)
+
+        Set tower_1 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\tower\1.jpg")
+        '
+        With tower_1
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+        '
+
+Next
+
+Set rng = Range("PIC_Item_6561365613")
+For Each cl In rng
+    tower = cl.Offset(0, -1)
+
+        Set tower_1 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\tower\2.jpg")
+        '
+        With tower_1
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+        '
+
+Next
+Set rng = Range("PIC_Item_6561465614")
+For Each cl In rng
+    tower = cl.Offset(0, -1)
+
+        Set tower_1 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\tower\3.jpg")
+        '
+        With tower_1
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+        '
+
+Next
+Set rng = Range("PIC_Item_6561565615")
+For Each cl In rng
+    site = cl.Offset(0, -1)
+
+        Set site_1 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\site\2.jpg")
+        '
+        With site_1
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+        '
+
+Next
+
+
+Set rng = Range("PIC_Item_6561965619")
+For Each cl In rng
+    rack = cl.Offset(0, -1)
+
+        Set rack_1 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\rack\11.jpg")
+        '
+        With rack_1
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+        '
+
+Next
+
+
+Set rng = Range("PIC_Item_6562065620")
+For Each cl In rng
+    rack = cl.Offset(0, -1)
+
+        Set rack_1 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\rack\10.jpg")
+        '
+        With rack_1
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+        '
+
+Next
+
+Set rng = Range("PIC_Item_6562165621")
+For Each cl In rng
+    rack = cl.Offset(0, -1)
+
+        Set rack_1 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\rack\5.jpg")
+        '
+        With rack_1
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+        '
+
+Next
+Set rng = Range("PIC_Item_6561665616")
+For Each cl In rng
+    site = cl.Offset(0, -1)
+
+        Set site_1 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\site\3.jpg")
+        
+        With site_1
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+        '
+
+Next
+
+Set rng = Range("PIC_Item_7449574495")
+For Each cl In rng
+    extraLader = cl.Offset(0, -1)
+
+        Set extra_lader = Sheet7.Pictures.Insert("E:\Modernaization\E2233\tssr\extra_cable2.jpg")
+        '
+        With extra_lader
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+        '
+
+Next
+Set rng = Range("PIC_Item_7449674496")
+For Each cl In rng
+    extraLader = cl.Offset(0, -1)
+
+        Set extra_lader = Sheet7.Pictures.Insert("E:\Modernaization\E2233\tssr\ibeam1.jpg")
+        '
+        With extra_lader
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+        '
+
+Next
+
+
+
+        
+Set rng = Range("PIC_Item_7445574455")
+For Each cl In rng
+    mw = cl.Offset(0, -1)
+
+        Set mw_1 = Sheet6.Pictures.Insert("E:\Modernaization\E2233\tssr\mw1.jpg")
+        '
+        With mw_1
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 80
+            .Height = 80
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+        '
+
+Next
+
+
+
+Set rng = Range("PIC_Item_7445674456")
+For Each cl In rng
+    mw = cl.Offset(0, -1)
+
+        Set mw_1 = Sheet6.Pictures.Insert("E:\Modernaization\E2233\tssr\mw2.jpg")
+        '
+        With mw_1
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 80
+            .Height = 80
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+        '
+
+Next
+
+
+
+
+Set rng = Range("PIC_Item_7445774457")
+For Each cl In rng
+    mw = cl.Offset(0, -1)
+
+        Set mw_1 = Sheet6.Pictures.Insert("E:\Modernaization\E2233\tssr\mw3.jpg")
+        '
+        With mw_1
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 80
+            .Height = 80
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+        '
+
+Next
+
+
+
 Set rng = Range("PIC_Item_6525265252")
 For Each cl In rng
     imgMap = cl.Offset(0, 0)
@@ -154,584 +370,6 @@ For Each cl In rng
         '
 
 Next
-
-Set rng = Range("PIC_Item_7445574455")
-Set rng = Range("PIC_Item_7445674456")
-Set rng = Range("PIC_Item_7445774457")
-
-For Each cl In rng
-    mw1 = cl.Offset(1, -1)
-    mw2 = cl.Offset(2, -2)
-    mw3 = cl.Offset(3, -3)
-
-
-        Set mw_1 = Sheet6.Pictures.Insert("E:\Modernaization\E2233\tssr\mw1.jpg")
-        Set mw_2 = Sheet6.Pictures.Insert("E:\Modernaization\E2233\tssr\mw2.jpg")
-        Set mw_3 = Sheet6.Pictures.Insert("E:\Modernaization\E2233\tssr\mw2.jpg")
- 
-        '
-        With mw_1
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width * 5
-            .Height = cl.Height * 5
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        With mw_2
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width * 5
-            .Height = cl.Height * 5
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-         With mw_3
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width * 5
-            .Height = cl.Height * 5
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-
-Next
-
-Set rng = Range("PIC_Item_7449074490_a")
-Set rng = Range("PIC_Item_7449174491")
-
-For Each cl In rng
-    rackTransmission = cl.Offset(0, -1)
-    rackTransmission2 = cl.Offset(0, -1)
-    
-        Set rack_transmission = Sheet6.Pictures.Insert("E:\Modernaization\E2233\tssr\rack_transmission1.jpg")
-        Set rack_transmission2 = Sheet6.Pictures.Insert("E:\Modernaization\E2233\tssr\rack_transmission2.jpg")
-        '
-          With rack_transmission
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width * 5
-            .Height = cl.Height * 5
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With rack_transmission2
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width
-            .Height = cl.Height
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-
-Next
-
-
-
-Set rng = Range("PIC_Item_6556465564")
-Set rng = Range("PIC_Item_6556565565")
-
-For Each cl In rng
-    iBeam1 = cl.Offset(0, -1)
-    iBeam2 = cl.Offset(0, -1)
-    
-        Set ibeam_1 = Sheet6.Pictures.Insert("E:\Modernaization\E2233\tssr\ibeam1.jpg")
-        Set ibeam_2 = Sheet6.Pictures.Insert("E:\Modernaization\E2233\tssr\ibeam2.jpg")
-        '
-          With ibeam_1
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width * 5
-            .Height = cl.Height * 5
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With ibeam_2
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width
-            .Height = cl.Height
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-
-Next
-
-
-Set rng = Range("PIC_Item_7449474494")
-Set rng = Range("PIC_Item_7449574495")
-Set rng = Range("PIC_Item_7449674496")
-For Each cl In rng
-    extraCable = cl.Offset(0, -1)
-    extraCable2 = cl.Offset(0, -1)
-    rackNian = cl.Offset(0, -1)
-    
-        Set extra_cable = Sheet7.Pictures.Insert("E:\Modernaization\E2233\tssr\extra_cable1.jpg")
-        Set extra_cable2 = Sheet7.Pictures.Insert("E:\Modernaization\E2233\tssr\extra_cable2.jpg")
-        Set rack_nian = Sheet7.Pictures.Insert("E:\Modernaization\E2233\tssr\rack_nian.jpg")
-        '
-          With extra_cable
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width * 5
-            .Height = cl.Height * 5
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With extra_cable2
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width
-            .Height = cl.Height
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With rack_nian
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width
-            .Height = cl.Height
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-Next
-
-
-
-
-
-
-
-
-Set rng = Range("PIC_Item_6561265612_a")
-Set rng = Range("PIC_Item_6561265612_a")
-Set rng = Range("PIC_Item_6561265612_a")
-Set rng = Range("PIC_Item_6561465614")
-Set rng = Range("PIC_Item_6561365613")
-Set rng = Range("PIC_Item_6561465614")
-For Each cl In rng
-    tower = cl.Offset(0, -1)
-    tower2 = cl.Offset(0, -1)
-    tower3 = cl.Offset(0, -1)
-    tower4 = cl.Offset(0, -1)
-    tower5 = cl.Offset(0, -1)
-    tower6 = cl.Offset(0, -1)
-    
-        Set tower_1 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\tower\6.jpg")
-        Set tower_2 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\tower\5.jpg")
-        Set tower_3 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\tower\4.jpg")
-        Set tower_4 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\tower\3.jpg")
-        Set tower_5 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\tower\2.jpg")
-        Set tower_6 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\tower\1.jpg")
-        '
-          With tower_1
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width * 5
-            .Height = cl.Height * 5
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With tower_2
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width
-            .Height = cl.Height
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With tower_3
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width
-            .Height = cl.Height
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With tower_4
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width * 5
-            .Height = cl.Height * 5
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With tower_5
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width
-            .Height = cl.Height
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With tower_6
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width
-            .Height = cl.Height
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-Next
-
-
-
-Set rng = Range("PIC_Item_6561565615")
-Set rng = Range("PIC_Item_6561665616")
-Set rng = Range("PIC_Item_6561765617")
-Set rng = Range("PIC_Item_6561565615")
-Set rng = Range("PIC_Item_6561665616")
-Set rng = Range("PIC_Item_6561765617")
-For Each cl In rng
-    rack = cl.Offset(0, -1)
-    rack2 = cl.Offset(0, -1)
-    rack3 = cl.Offset(0, -1)
-    rack4 = cl.Offset(0, -1)
-    rack5 = cl.Offset(0, -1)
-    rack6 = cl.Offset(0, -1)
-        Set rack_1 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\rack\8.jpg")
-        Set rack_2 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\rack\7.jpg")
-        Set rack_1 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\rack\6.jpg")
-        Set rack_2 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\rack\5.jpg")
-        Set rack_3 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\rack\4.jpg")
-        Set rack_4 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\rack\3.jpg")
-        Set rack_5 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\rack\2.jpg")
-        Set rack_6 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\rack\1.jpg")
-        '
-          With rack_1
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width * 5
-            .Height = cl.Height * 5
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With rack_2
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width
-            .Height = cl.Height
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With rack_3
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width
-            .Height = cl.Height
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With rack_4
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width * 5
-            .Height = cl.Height * 5
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With rack_5
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width
-            .Height = cl.Height
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With rack_6
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width
-            .Height = cl.Height
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-Next
-
-
-
-Set rng = Range("PIC_Item_6561965619")
-Set rng = Range("PIC_Item_6562065620")
-Set rng = Range("PIC_Item_6562165621")
-
-For Each cl In rng
-    rack = cl.Offset(0, -1)
-    rack2 = cl.Offset(0, -1)
-    rack3 = cl.Offset(0, -1)
-    rack4 = cl.Offset(0, -1)
-    rack5 = cl.Offset(0, -1)
-    rack6 = cl.Offset(0, -1)
-        Set rack_1 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\rack\8.jpg")
-        Set rack_2 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\rack\9.jpg")
-        Set rack_1 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\rack\7.jpg")
-        '
-          With rack_1
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width * 5
-            .Height = cl.Height * 5
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With rack_2
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width
-            .Height = cl.Height
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With rack_3
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width
-            .Height = cl.Height
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-       
-Next
-
-
-Set rng = Range("PIC_Item_6562465624")
-Set rng = Range("PIC_Item_6562565625")
-Set rng = Range("PIC_Item_6562665626")
-
-For Each cl In rng
-    rack9 = cl.Offset(0, -1)
-    rack10 = cl.Offset(0, -1)
-    rack11 = cl.Offset(0, -1)
-        Set rack_9 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\rack\8.jpg")
-        Set rack_10 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\rack\11.jpg")
-        Set rack_11 = Sheet8.Pictures.Insert("E:\Modernaization\E2233\tssr\rack\10.jpg")
-        '
-          With rack_9
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width * 5
-            .Height = cl.Height * 5
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With rack_10
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width
-            .Height = cl.Height
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With rack_11
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = cl.Width
-            .Height = cl.Height
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-       
-Next
-
-
-Set rng = Range("PIC_Item_7455874558")
-Set rng = Range("PIC_Item_7455974559")
-Set rng = Range("PIC_Item_7456174561")
-Set rng = Range("PIC_Item_7456274562")
-Set rng = Range("PIC_Item_7456374563")
-
-For Each cl In rng
-    sec1 = cl.Offset(0, -1)
-        Set sec_1 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL A\1.jpg")
-        Set sec_1 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL A\2.jpg")
-        Set sec_1 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL A\3.jpg")
-        Set sec_1 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL A\4.jpg")
-        Set sec_1 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL A\5.jpg")
-        '
-          With sec_1
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = 30
-            .Height = 30
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With sec_1
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = 30
-            .Height = 30
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With sec_1
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = 30
-            .Height = 30
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-       '
-          With sec_1
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = 30
-            .Height = 30
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With sec_1
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = 30
-            .Height = 30
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-Next
-
-
-Set rng = Range("PIC_Item_7453974539")
-Set rng = Range("W80")
-Set rng = Range("PIC_Item_7454274542")
-Set rng = Range("PIC_Item_7454374543")
-Set rng = Range("PIC_Item_7454474544")
-
-For Each cl In rng
-    sec2 = cl.Offset(0, -1)
-        Set sec_2 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL B\1.jpg")
-        Set sec_2 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL B\2.jpg")
-        Set sec_2 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL B\3.jpg")
-        Set sec_2 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL B\4.jpg")
-        Set sec_2 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL B\5.jpg")
-        '
-          With sec_2
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = 30
-            .Height = 30
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With sec_2
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = 30
-            .Height = 30
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With sec_2
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = 30
-            .Height = 30
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-       '
-          With sec_2
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = 30
-            .Height = 30
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With sec_2
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = 30
-            .Height = 30
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-Next
-
-
-Set rng = Range("PIC_Item_7453974539")
-Set rng = Range("W80")
-Set rng = Range("PIC_Item_7454274542")
-Set rng = Range("PIC_Item_7454374543")
-Set rng = Range("PIC_Item_7454474544")
-
-For Each cl In rng
-    sec3 = cl.Offset(0, -1)
-        Set sec_3 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL C\1.jpg")
-        Set sec_3 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL C\2.jpg")
-        Set sec_3 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL C\3.jpg")
-        Set sec_3 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL C\4.jpg")
-        Set sec_3 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL C\5.jpg")
-        '
-          With sec_3
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = 30
-            .Height = 30
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With sec_3
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = 30
-            .Height = 30
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With sec_3
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = 30
-            .Height = 30
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-       '
-          With sec_3
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = 30
-            .Height = 30
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-        '
-          With sec_3
-            .ShapeRange.LockAspectRatio = msoFalse
-            .Width = 200
-            .Height = 200
-            .Top = Rows(cl.Row).Top
-            .Left = Columns(cl.Column).Left
-        End With
-        '
-Next
-
 
 Set rng = Range("PIC_Item_6569165691")
 For Each cl In rng
@@ -987,9 +625,295 @@ For Each cl In rng
         '
 
 Next
+Set rng = Range("D63")
+For Each cl In rng
+    rack10 = cl.Offset(0, -1)
+
+        Set rack_10 = Sheet15.Pictures.Insert("E:\Modernaization\E2233\tssr\rack\10.jpg")
+        '
+        With rack_10
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+
+
+Next
+
+Set rng = Range("R63")
+For Each cl In rng
+    rack6 = cl.Offset(0, -1)
+
+        Set rack_6 = Sheet15.Pictures.Insert("E:\Modernaization\E2233\tssr\rack\6.jpg")
+        '
+        With rack_6
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+
+
+Next
+
+
+Set rng = Range("AF63")
+For Each cl In rng
+    rack8 = cl.Offset(0, -1)
+
+        Set rack_8 = Sheet15.Pictures.Insert("E:\Modernaization\E2233\tssr\rack\8.jpg")
+        '
+        With rack_8
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+
+
+Next
+
+
+Set rng = Range("D81")
+For Each cl In rng
+    rack8 = cl.Offset(0, -1)
+
+        Set rack_8 = Sheet15.Pictures.Insert("E:\Modernaization\E2233\tssr\rack\8.jpg")
+        '
+        With rack_8
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+
+
+Next
+
+
+Set rng = Range("PIC_Item_7452074520")
+For Each cl In rng
+    sec1 = cl.Offset(0, -1)
+
+        Set sec_1 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL A\1.jpg")
+        '
+        With sec_1
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+
+
+Next
+
+Set rng = Range("PIC_Item_7452174521")
+For Each cl In rng
+    sec1 = cl.Offset(0, -1)
+
+        Set sec_1 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL A\1.jpg")
+        '
+        With sec_1
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+
+
+Next
+
+Set rng = Range("PIC_Item_7452574525")
+For Each cl In rng
+    sec1 = cl.Offset(0, -1)
+
+        Set sec_1 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL A\3.jpg")
+        '
+        With sec_1
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+
+
+Next
+Set rng = Range("PIC_Item_7452374523")
+For Each cl In rng
+    sec1 = cl.Offset(0, -1)
+
+        Set sec_1 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL A\4.jpg")
+        '
+        With sec_1
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+
+
+Next
+Set rng = Range("PIC_Item_7452474524")
+For Each cl In rng
+    sec1 = cl.Offset(0, -1)
+
+        Set sec_1 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL A\5.jpg")
+        '
+        With sec_1
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+
+
+Next
+
+
+Set rng = Range("PIC_Item_7453974539")
+For Each cl In rng
+    sec2 = cl.Offset(0, -1)
+
+        Set sec_2 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL B\1.jpg")
+        '
+        With sec_2
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+
+
+Next
+
+Set rng = Range("PIC_Item_7454274542")
+For Each cl In rng
+    sec2 = cl.Offset(0, -1)
+
+        Set sec_2 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL B\4.jpg")
+        '
+        With sec_2
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+
+
+Next
+Set rng = Range("PIC_Item_7454474544")
+For Each cl In rng
+    sec2 = cl.Offset(0, -1)
+
+        Set sec_2 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL B\3.jpg")
+        '
+        With sec_2
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+
+
+Next
+Set rng = Range("PIC_Item_7454374543")
+For Each cl In rng
+    sec2 = cl.Offset(0, -1)
+
+        Set sec_2 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL B\5.jpg")
+        '
+        With sec_2
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+
+
+Next
 
 
 
 
+
+Set rng = Range("PIC_Item_7455874558")
+For Each cl In rng
+    sec2 = cl.Offset(0, -1)
+
+        Set sec_3 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL C\1.jpg")
+        '
+        With sec_3
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+
+
+Next
+
+Set rng = Range("PIC_Item_7456174561")
+For Each cl In rng
+    sec3 = cl.Offset(0, -1)
+
+        Set sec_3 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL C\4.jpg")
+        '
+        With sec_3
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+
+
+Next
+Set rng = Range("PIC_Item_7456374563")
+For Each cl In rng
+    sec3 = cl.Offset(0, -1)
+
+        Set sec_3 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL C\3.jpg")
+        '
+        With sec_3
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+
+
+Next
+Set rng = Range("PIC_Item_7456274562")
+For Each cl In rng
+    sec3 = cl.Offset(0, -1)
+
+        Set sec_3 = Sheet9.Pictures.Insert("E:\Modernaization\E2233\tssr\CELL C\5.jpg")
+        '
+        With sec_3
+            .ShapeRange.LockAspectRatio = msoFalse
+            .Width = 100
+            .Height = 100
+            .Top = Rows(cl.Row).Top
+            .Left = Columns(cl.Column).Left
+        End With
+
+
+Next
 End Sub
 
